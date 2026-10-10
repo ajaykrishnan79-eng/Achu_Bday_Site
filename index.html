@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4efe3">
+<title>Happy Birthday, My Baby ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="petals" aria-hidden="true"></div>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="Back to beginning">for you <span>♡</span></a>
+  <button id="musicToggle" class="music-toggle" type="button" aria-pressed="false"><span>♫</span> <b id="musicLabel">Play music</b></button>
+</header>
+
+<main>
+  <section class="page active" id="page1">
+    <div class="hero-art">
+      <div class="moon"></div><div class="flower f1">✿</div><div class="flower f2">❀</div>
+      <img class="girlfriend-anime" src="assets/girlfriend-anime.png" alt="Anime-style portrait in a teal sari">
+      <div class="art-caption">a tiny world made just for you</div>
+    </div>
+    <p class="eyebrow">A LITTLE BIRTHDAY SURPRISE</p>
+    <h1>Happy Birthday,<br><em>my baby</em> <span class="heart">♡</span></h1>
+    <p class="intro">For the girl who made my days a little more special.</p>
+    <button class="primary-btn" data-next="page2">Open your surprise <span>→</span></button>
+    <p class="tiny-note">made with lots of love, just for you</p>
+  </section>
+
+  <section class="page" id="page2">
+    <p class="eyebrow">A LITTLE NOTE FROM ME</p>
+    <h2>Our little<br><em>beginning</em> ♡</h2>
+    <div class="memory-gallery">
+      <figure class="memory memory-large"><img src="assets/couple-hug.jpg" alt="A photo of us hugging"><figcaption>one of my favourite people ♡</figcaption></figure>
+      <figure class="memory memory-small"><img src="assets/couple-smile.jpg" alt="A happy photo of us together"><figcaption>our little beginning</figcaption></figure>
+      <figure class="memory memory-kiss"><img src="assets/couple-kiss.jpg" alt="A sweet moment together"><figcaption>♡</figcaption></figure>
+    </div>
+    <article class="message-card">
+      <span class="card-flower">✿</span>
+      <p>Happy Birthday, babyyy! 🎂❤️🥹</p>
+      <p>I'm soo happy I got to meet you and that you came into my life and be ur boyfriend. 🥹❤️ This is one of the best things that has happened to me in a long time.</p>
+      <p>I really hope we end up together and make lots of beautiful memories. I love you soo much, babyyy! ❤️ So blessed to have you in my life. 😘❤️</p>
+    </article>
+    <p class="tiny-note">I wanted you to have something made just for you ♡</p>
+    <button class="primary-btn" data-next="page3">One last surprise <span>→</span></button>
+    <button class="text-btn" data-prev="page1">← go back</button>
+  </section>
+
+  <section class="page" id="page3">
+    <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+    <h2>A little piece<br><em>of moonlight</em> 🌙</h2>
+    <p class="intro">A tiny reminder of something special, chosen just for you.</p>
+    <div class="pendant-card">
+      <div class="pendant-glow"></div>
+      <img src="assets/pendant-stone.jpg" alt="The moon pendant gift" class="pendant-photo">
+      <div class="pendant-note">two little moons, one lovely memory</div>
+    </div>
+    <p class="gift-copy">I hope whenever you wear it, it reminds you that someone is always cheering for you and wishing you the happiest things. ❤️</p>
+    <div class="letter-teaser">
+      <div class="letter-icon">✉</div>
+      <div><strong>And one more thing…</strong><span>There's a little letter waiting for you.</span></div>
+    </div>
+    <button class="primary-btn" id="openLetter">Open your letter <span>♡</span></button>
+    <article id="letter" class="letter hidden">
+      <div class="letter-top">For my baby <span>♡</span></div>
+      <p>Happy Birthday, babyyy! 🎂❤️🥹</p>
+      <p>I'm soo happy I got to meet you and that you came into my life and be ur boyfriend. 🥹❤️ This is one of the best things that has happened to me in a long time.</p>
+      <p>I really hope we end up together and make lots of beautiful memories. I love you soo much, babyyy! ❤️ So blessed to have you in my life. 😘❤️</p>
+      <div class="letter-signoff">With lots of love, always ♡</div>
+      <div class="doodle-row" aria-hidden="true">♡　✿　☾　✧　♡</div>
+    </article>
+    <p class="final-line">Here's to our little story — and all the memories still waiting for us. ♡</p>
+    <button class="text-btn" data-prev="page2">← back to our memories</button>
+  </section>
+</main>
+<footer>made just for you <span>♡</span></footer>
+<audio id="backgroundMusic" src="music.mp3" loop preload="none"></audio>
+<script src="script.js"></script>
+</body></html>
